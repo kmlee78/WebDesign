@@ -1,0 +1,243 @@
+@font-face{
+    src: url("font/Patrick_Hand/PatrickHand-Regular.ttf");
+    font-family: "title";
+}
+@font-face{
+    src: url("font/Shadows_Into_Light/ShadowsIntoLight-Regular.ttf");
+    font-family: "menu";
+}
+@font-face{
+    src: url("font/Varela_Round/VarelaRound-Regular.ttf");
+    font-family: "story";
+}
+@font-face{
+    src: url("font/Amatic_SC/AmaticSC-Bold.ttf");
+    font-family: "main";
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*최상단 타이틀*/
+header{
+    background-color: #FFCC99;
+    height: 90px;
+    width: 100%;
+    line-height: 90px;
+}
+.top{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    vertical-align: middle;
+    line-height: normal;
+}
+.top h1{
+    display: inline;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: "title";
+    color: #404040;
+} 
+
+main{
+    background-color: #FFE5CC;
+}
+
+/*네비게이션 바*/
+.nav{
+    display: block;
+    text-align: center;
+    font-size: 10px;
+    width: 50px;
+    height: 35px;
+    background-color: aquamarine;
+    border-radius: 10px;
+    text-decoration: none;
+    position: fixed;
+    right: 50px;
+    bottom: 30px;
+}
+.nav h3{
+    border-bottom: 1px solid black;
+}
+.nav:hover{
+    color: red;
+}
+
+/*.middle{
+    height: 1000px;
+}*/
+
+/* 디폴트 박스 구성 요소*/
+.box1{
+    width: 30%;
+    height: 200px;
+    text-align: center;
+    background-color: #1E5F50;
+    float: right;
+    font-family: "menu";
+    line-height: 200px;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.menubox{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    list-style: none;
+    padding: 0;
+    font-size: 30px;
+}
+.menubox a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 30px;
+}
+.menubox a:hover{
+    text-decoration: underline;
+}
+
+.box2{
+    width: 30%;
+    height: 400px;
+    background-image: url("images/img2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    float: right;
+    clear: right;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.box3{
+    width: 60%;
+    height: 700px;
+    background-image: url("images/img1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+
+.finish{
+    clear: right;
+}
+
+/*메인 화면만 해당*/
+.extra{
+    height: 200px;
+    background-image: url("images/cloud.png");
+    background-repeat: no-repeat; 
+    margin-top: 100px;   
+}
+.pic{
+    width: 20%;
+    height: 150px;
+    float: left;
+    margin-left: 30px;
+    margin-right: 25px; 
+    border-radius: 10px;
+}
+.pic1{
+    background-image: url("images/img3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    
+}
+.pic2{
+    background-image: url("images/img4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    
+}
+.pic3{
+    background-image: url("images/img5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;  
+    
+}
+.pic4{
+    background-image: url("images/img6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+/*photo화면*/
+.photozone{
+    font-family: "title";
+    width: 700px;
+    text-align: center;
+}
+.photozone img{
+    margin-top: 50px;
+}  
+
+/*video화면*/
+.videozone{
+    font-family: "title";
+    width: 700px;
+    text-align: center;
+}
+video{
+    margin-top: 100px;
+    border: 3px solid black;
+}
+
+/*story화면*/
+.storyzone{
+    font-family: "title";
+    width: 700px;
+    text-align: center;
+}
+
+/*donate화면*/
+.donatezone{
+    font-family: "title";
+    width: 700px;
+    text-align: center;
+}
+.donatezone .giveme{
+    margin-top: 50px;
+}
+    
+
+
+/*최하단 로고 및 메인화면 링크*/
+.bottom{
+    text-align: center;
+    height: 60px;
+    margin-top: 30px;
+}
+.bottom a{
+    display: inline-block;
+    text-decoration: none;
+    height: 60px;
+    width: 100px;
+}
+.blank{
+    display: inline-block;
+    background-image: url("images/balloon.png");
+    height: 30px;
+    width: 40px;
+    position: relative;
+    bottom: 35px; 
+    right: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "main";
+    color: black;
+}
+
+.blank:hover{
+    color: red;
+}
