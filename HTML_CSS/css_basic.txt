@@ -1,0 +1,83 @@
+<!-- This is a part from html file, which is a link between html file and css file -->
+
+<head>
+  <title>Vacation World</title>
+  <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+
+
+
+
+
+
+<!-- From now it's css file -->
+
+p {
+  font-family: Arial;		태그 달린거 가르킴
+}
+
+
+.title {
+  color: teal;		class이름 달린거 가르킴
+}
+
+
+
+.description h5{
+  color: teal;		두 조건 동시에 만족하는거
+}
+
+
+
+h5,p{
+  font-family: Georgia;		두 조건 둘다 적용
+}
+
+#listcolor {
+  color: red;		id이름 달린거(하나 밖에 못함)
+}
+
+
+
+
+
+
+<!-- Syntaxes of css file --> 
+
+p{
+ font-family: "Georgia", "Times", serif;		앞에거 인식 못하면 뒤에 서체로 적용 그것도 안되면 serif폰트 중 되는거로. 없는 폰트 쓰고 싶으면 구글폰트 쓰면 됨
+					serif, sans-serif, monospace, cursive, fantasy
+ font-size: 18px;		%로도 설정가능. 그 부모태그의 픽셀 값의 상대적 기준임. 1em = 100%, 2em = 200%
+ font-weight: bold;     	<!--normal-->100~900까지 숫자로 설정 가능
+ text-align: center;		<!-- right, left-->
+ line-height: 40px;		
+줄간격조절가능. 실제 내용이 들어가있는 콘텐츠영역에는 영향 주지 않고 각 줄이 실질적으로 차지하는 공간 정해줌
+ color: red;
+
+ background-image: url("Soccer_playground.jpg");
+background-repeat: no-repeat;	이러면 배경이미지가 여러번 반복 안됨.
+background-size: cover;	화면 꽉 채우면서 원래 비율 유지
+		50% 60%;	부모요소길이의 가로 50 세로 60 퍼센트 설정
+background-position: center center;
+이것들은 그냥 세트로 외워 둬
+
+ color: blue !important;	값 고정
+ text-decoration:		none, underline, overline, line-through
+			a태그에서 밑줄 없앨 때 도움
+background-color: 어쩌구
+}
+
+가끔씩 a 같은 링크 태그는 가운데 정렬이 안되는 경우가 있는데 그럴때는
+div 같은걸로 태그를 감싼다음에 그 div에 class를 지정하고 가운데정렬 해준다.
+
+폰트 파일을 다운맏은 다음 그걸 프로젝트 포더로 옮겨서 쓸수도 있음
+css파일 안에
+
+@font-face{
+	src: url("폰트파일폴더/파일이름");
+	font-family: "내맘대로";
+}
+해 놓으면 그때 부터 이제 이 css파일에 맘대로 쓸수 있음
+p{
+	font-family: "내맘대로";
+}

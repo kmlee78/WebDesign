@@ -1,0 +1,40 @@
+.classname{
+ position: static; 	<!--default--> 포지셔닝이 되지 않은 상태
+
+ position: relative;
+ postion: absolute;
+ position: fixed;	<!--위에 셋 top bottom left right 로 조정-->
+
+relative는 처음 위치를 기준으로 이동
+fixed는 브라우저 화면 상을 기준으로 이동
+absolute는 가장 가까운 포지셔닝이 된 조상요소를 기준으로 이동
+
+ z-index: 3;	<!--static 일땐 못 씀-->
+ display: inline;	<!--다 horizontal 하게 배치-->
+ display: block;
+ display: inline-block;
+
+
+ float: right;	붕 띄운 다음에<!--맨 옆으로 붙임-->
+ float: left;	띄우고 남은 공백에는 밑에 있던 블락들이 올라와서 채우게 됨
+	단, 띄워진 게 가리고 있는 부분에는 요소들이 들어가지 못함
+	그래서 사진을 둘러싸고 있는 글 설명문 같은거 만들 수 있음.
+이걸 이용해 그리드 레이아웃을 만들 수 있음
+여러 박스들을 동시에 띄워서 float: left; 같이 해주면 그 박스들이 알아서 순서대로
+왼쪽부터 차곡차곡 옆으로 정렬하게 된다. 옆에 꽉 차면 다시 줄 바꿔서 밑 줄에 
+다시 왼쪽부터 정렬된다. 창크기 바뀌어도 알아서 줄세움.
+
+ clear: left;	<!--float 간섭 못하게 함-->
+	이건 이제 그리드들을 float 시켜서 정렬을 할때 왼쪽에 띄워진 그리드가
+	없게끔 하는 행위임 만약 왼쪽에 그리드가 있다면 줄을 바꿔서
+	왼쪽으로 정렬하게 됨.
+	
+클리어를 사용해서 얻을 수 있는 이점이 있다면 레이아웃된 그리드 주위에 테두리
+를 긋는다던지 아니면 그리드들 밑에부터 다시 글을 쓰고 싶다던지 할때
+수많은 <div></div>들 이후로 빈공간의 <div class ="~~"></div>를 하나 선언하고 
+해당 ~~클라스에 clear: left (또는 right)를 선언해주면 해당형체없는 그리드가 맨 밑
+으로 가게 되면서 전체 그리드에 테두리도 씌울 수 있고 밑에 글도 쓸 수 있다. 
+ clear: right;
+ clear: both;
+ clear: none;	<!--터치 가능-->
+}

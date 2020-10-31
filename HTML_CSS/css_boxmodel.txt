@@ -1,0 +1,57 @@
+p.classname{
+ height: 100px;		보더 패딩 길이 제외한 내용물 크기 설정
+ width: 50px;		<!--둘 다 %로도 나타낼 수 있다.-->
+width 나 height 100%로 설정해 두고 나중에 패딩과 마진 값만 조정해서 디자인 할 수도 있다
+ border: 3px solid red;	<!--두께(thin medium thick) (none dotted solid) -->
+border-width   border-style   border-color   같이 나눠서 쓸 수도 있음
+border-top: 2px dotted red	위에 보더만 생기는거. left bottom right 도 가능	
+border: none;	테두리 없애기
+ border-radius: 10px	또는 100%;(원된다)
+border-top-left-radius 나 border-bottom-right-radius 처럼 개별 설정 가능
+ padding: 10px;		<!--%가능-->
+ padding: 10px 20px 10px 20px;	위 오른쪽 아래 왼쪽
+ padding: 10px 20px;	위아래 10px 왼오른쪽 20px
+ padding-top: 20px;		<!--bottom right left 도 있음-->
+ margin: 20px;	<!--padding 처럼 얘도 다 있다.-->
+
+ margin 0 auto;	<!-- width 필수-->그 박스 자체를 자동중앙정렬
+margin-left: auto; margin-right: auto; 도 가능
+상대가 inline 요소 일 때는 display: block; 선언 후 마진오토 설정해주면 됨
+
+ min-width: 100px;		보통 창크기 줄이거나 늘릴 때 마다 안에 있는 박스 크기도
+ max-width: 100px;		막 줄어들고 하는데 이렇게 min 설정해두면 일정크기만큼만
+ min-height: 10px;		줄어들다가 범위 이후론 창 밖으로 튀어나감 스크롤 뜨면서
+ max-height: 10px;
+			max-height 설정해놓고 본문글이 너무 길면 글이 튀어나가서 다른 박스랑 겹칠수도 있다
+ overflow: hidden;		<!--scroll visible hidden auto 4가지-->그래서 이렇게 overflow로 해결가능
+	visible은기본값 hidden은 튀어나온거 짜르기 scroll은 스크롤 auto는 튀어나오면 스크롤 안튀어나오면 그대로
+visibility: hidden;		<!--visible-->
+ display: none;
+
+box-shadow	그림자 넣는거. 별 필요 없으니까 쓰고 싶으면 찾아서 써보자
+box-sizing: border-box;
+width: 100px;
+height: 100px;
+원래는 박스 내에서 내용물길이+패딩길이+보더 길이 다 고려해서
+width height 설정해 줘야 했지만 이거 하나면 자동적으로 내용물패딩보더 길이
+다 합한 만큼의 길이를 밑에 써진대로 100px 100px 로 설정해줌.
+이거 대신 밑에 있는 것 처럼 *{} 로 모든 속성 적용 시켜 줄 수도 있음. 
+}
+
+<!-- Resetting Default -->
+
+*{
+ margin: 0;
+ padding: 0;
+}
+
+
+
+<!-- Box sizing -->
+
+*{		이걸 써주면 파일 내 모든 속성에 대해서 적용되는 것임
+ box-sizing: border-box;
+}	<!--It makes sure that the dimensions of elements remains the same regardless of border width and padding.-->
+
+
+Default value는 content-box

@@ -1,0 +1,28 @@
+<$$$$$$$중요$$$$$$$>
+inline 요소들은 다른 요소들과 같은 줄에 머무르려고 하는 성향과, 필요한 만큼의 가로 길이만 차지하는 성향이 있습니다.
+얘는 가로길이를 따로 설정 못함.
+block 요소들은 다른 요소들과 독단적인 줄에 가려고 하는 성향과, 최대한 많은 가로 길이를 차지하는 성향이 있습니다.
+
+i {
+  display: block; 	/* <i> 태그를 block으로 바꾸기 */
+  background-color: green;
+}
+div {
+  display: inline; 	/* <div> 태그를 inline으로 바꾸기 */
+}
+	
+inline 요소처럼 다른 요소들과 같은 줄에 머무르면서 block 요소처럼 가로, 세로 길이도 설정해주고 싶으면
+i {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+}
+
+inline 또는 inline-block 요소면 부모 태그에 text-align: center;를 써주면 됩니다.
+block 요소면 margin-left: auto;, margin-right: auto;를 써주면 되
+
+vertical-align 속성은 인라인 또는 인라인 블록 요소에 적용
+따라서 display값을 바꿔주고 vertical-align을 middle로 한 다음
+상위 div의 line-height를 그냥 height랑 같게 해주면 된다.
+만약 line-height값이 상속이 되어 하위 div값 까지 까지 영향을 주게 된다면
+하위 div에서는 line-height: normal 을 선언해주면 된다.
