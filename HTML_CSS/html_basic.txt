@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Brown Bears</title>
+</head>
+
+<body>
+  <a href="./index.html">Brown Bear</a>
+  <a href="./aboutme.html">About Me</a>
+  <h1>The Brown Bear</h1>
+    <ul>
+      <li><a href="#introduction">Introduction</a></li>   그냥 "#"만 있다면 해당 페이지의 최상단으로 이동
+      <li><a href="#habitat">Habitat</a></li>
+      <li><a href="#media">Media</a></li>
+    </ul>
+  <div id="introduction">
+    <h2>About Brown Bears</h2>
+    <p>The brown bear (<em>Ursus arctos</em>) is native to parts of northern Eurasia and North America. Its conservation status is currently <strong>Least Concern</strong>.<br /><br /> There are many subspecies within the brown bear species, including the
+      Atlas bear and the Himalayan brown bear.</p>
+    <a href="https://en.wikipedia.org/wiki/Brown_bear" target="_blank">Learn More</a>
+    <h3>Species</h3>
+    <ul>
+      <li>Arctos</li>
+      <li>Collarus</li>
+      <li>Horribilis</li>
+      <li>Nelsoni (extinct)</li>
+    </ul>
+    <h3>Features</h3>
+    <p>Brown bears are not always completely brown. Some can be reddish or yellowish. They have very large, curved claws and huge paws. Male brown bears are often 30% larger than female brown bears. They can range from 5 feet to 9 feet from head to toe.</p>
+  </div>
+  <div id="habitat">
+    <h2>Habitat</h2>
+    <h3>Countries with Large Brown Bear Populations</h3>
+    <ol>
+      <li>Russia</li>
+      <li>United States</li>
+      <li>Canada</li>
+    </ol>
+    <h3>Countries with Small Brown Bear Populations</h3>
+    <p>Some countries with smaller brown bear populations include Armenia, Belarus, Bulgaria, China, Finland, France, Greece, India, Japan, Nepal, Poland, Romania, Slovenia, Turkmenistan, and Uzbekistan.</p>
+  </div>
+  <div id="media">
+    <h2>Media</h2>
+    <a href="https://en.wikipedia.org/wiki/Brown_bear" target="_blank"><img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/web101-image_brownbear.jpg"/></a>
+    <video src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-1/lesson-2/htmlcss1-vid_brown-bear.mp4" height="240" width="320" controls>Video not supported</video>
+  </div>
+</body>
+
+</html>
+
+
+<meta charset = "utf-8"> 		이걸로 한글도 꺠지지 않고 인식
+
+<img src = "image/sajin.jpg"/> 이렇게 하면 image 폴더에 있는 사진파일
+<img src = "../sajin.jpg"/> 이렇게 하면 상위폴더 있는 사진 파일
+<img src = "../image/sajin.jpg"/> 여러번 찾아서 갈 수도 있다
+<a href="https://en.wikipedia.bear" target="_blank"><img src = "~~~"></a>
+사진이 곧 링크가 됨
+
+<p>한가운데 있는 문자열을 어떻게 바꾸고 싶어서 <div>를 쓰면 줄바꿈이 됨
+그럴땐 <div> 대신 <span> 을 쓰면 된다
+예)
+<span class = "~~~"> ~~~~</span>
+
+
+<ol>		순서가 매겨져 있는거
+	<li></li>
+	<li></li>
+</ol>
+
+<ul>		순서가 매겨져 있지 않은거
+	<li></li>
+	<li></li>
+</ul>
+
+<ol type = "">	""안에 a,A 누르면 알파벳 순서 i,I 누르면 로마자순서 디폴트값 숫자
+
+css파일에서
+ul li{
+	list-style-type: square; 로 목록모양 사각형으로 만들 수도 있고
+	list-style: none;	으로 그냥 없애버릴 수도 있다
+}

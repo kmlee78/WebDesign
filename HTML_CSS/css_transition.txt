@@ -1,0 +1,21 @@
+.game .gazelle {
+  position: absolute;
+  top: 260px;
+  left: 231px;
+  z-index: 1;
+  transition: max-height  750ms  ease-in 750ms;
+  max-height: 50px;
+}
+
+.game .gazelle:hover {	<!--hover가 아마 커서 올려놓는거일듯-->
+  max-height: 180px;
+}
+
+위에 transition파트 이렇게 써도 됨
+transition-property: max-height;
+transition-duration: 750ms;
+transition-timing-function: 750ms;
+transition-delay: ease-in;
+
+transition: all 1.2s ease-out 0.2s;
+property자리에 all을 쓰면 모든 value값을 한번에 지정할 수 있다.
