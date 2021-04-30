@@ -1,0 +1,687 @@
+*{
+    box-sizing: border-box;
+}
+
+@font-face{
+    src: url("font/Single_Day/SingleDay-Regular.ttf");
+    font-family: "love";
+}
+
+body{
+    background-image: url("img/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #FFB266;
+}
+
+.form{
+    height: 220px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#question{
+    font-size: 50px;
+    font-family: love;
+    font-weight: bold;
+}
+
+.type{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.input{
+    height: 30px;
+}
+
+.startBtn{
+    color: white;
+    background-color: green;
+    border-radius: 5px;
+    height: 27px;
+}
+
+.img{
+    width: 100%;
+    text-align: center;
+}
+.img img{
+    display: inline;
+}
+
+.img img:hover{
+    animation: bounce_frames 0.4s;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
+    animation-iteration-count: infinite;
+}
+@keyframes bounce_frames {
+    from {transform: translate3d(0, 0, 0);}
+    to {transform: translate3d(0, 30px, 0);}
+}
+
+/*procedure.html*/
+.questionnumber{
+    height: 50px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.number{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 100%;
+    border: 2px solid black;
+}
+
+.highlight{
+    border: 7px solid black;
+}
+
+.box{
+    width: 70%;
+    height: 350px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+.questions{
+    font-size: 30px;
+    font-family: "love";
+    margin: 0;
+    font-weight: bold;
+}
+
+.subbox{
+    width: 25%;
+    height: 70%;
+    display: inline-block;
+    
+}
+
+.img1, .img2, .img3{
+    height: 90%;
+    border: 2px solid black;
+}
+
+.mark{
+    margin-top: 20px;
+    text-align: right;
+}
+
+.next{
+    position: relative;
+    right: 200px;
+}
+.submit{
+    position: relative;
+    right: 150px;
+}
+
+.sentence1, .sentence2, .sentence3{
+    font-family: "love";
+    font-size: 20px;
+}
+
+.one{
+    background-image: url("img/low.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.two{
+    background-image: url("img/middle.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.three{
+    background-image: url("img/high.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.four{
+    background-image: url("img/house1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.five{
+    background-image: url("img/house2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.six{
+    background-image: url("img/house3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.seven{
+    background-image: url("img/desert1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.eight{
+    background-image: url("img/desert2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.nine{
+    background-image: url("img/desert3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+/*result*/
+.form2{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.mine{
+    width: 50%;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.picture, .profile{
+    width: 40%;
+    height: 100%;
+    float: left;
+    margin-left: 30px;
+    border-radius: 7px;
+}
+
+.tomain{
+    display: block;
+    color: white;
+    background-color: green;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.serika{
+    background-image: url("img/profile/serika.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.serika2{
+    background-image: url("img/profile/serika2.PNG");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.emily{
+    background-image: url("img/profile/emily.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.emily2{
+    background-image: url("img/profile/emily2.PNG");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.hinata{
+    background-image: url("img/profile/hinata.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.hinata2{
+    background-image: url("img/profile/hinata2.PNG");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.yuriko{
+    background-image: url("img/profile/yuriko.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.yuriko2{
+    background-image: url("img/profile/yuriko2.PNG");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.roko{
+    background-image: url("img/profile/roko.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.roko2{
+    background-image: url("img/profile/roko2.PNG");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.anna{
+    background-image: url("img/profile/anna.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.anna2{
+    background-image: url("img/profile/anna2.PNG");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.subaru{
+    background-image: url("img/profile/subaru.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.subaru2{
+    background-image: url("img/profile/subaru2.PNG");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.momoko{
+    background-image: url("img/profile/momoko.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.momoko2{
+    background-image: url("img/profile/momoko2.PNG");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.konomi{
+    background-image: url("img/profile/konomi.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.konomi2{
+    background-image: url("img/profile/konomi2.PNG");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.iku{
+    background-image: url("img/profile/iku.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.iku2{
+    background-image: url("img/profile/iku2.PNG");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.tamaki{
+    background-image: url("img/profile/tamaki.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.tamaki2{
+    background-image: url("img/profile/tamaki2.PNG");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.kana{
+    background-image: url("img/profile/kana.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.kana2{
+    background-image: url("img/profile/kana2.PNG");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.mirai{
+    background-image: url("img/profile/mirai.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.mirai2{
+    background-image: url("img/profile/mirai2.PNG");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.miya{
+    background-image: url("img/profile/miya.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.miya2{
+    background-image: url("img/profile/miya2.PNG");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.sayoko{
+    background-image: url("img/profile/sayoko.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.sayoko2{
+    background-image: url("img/profile/sayoko2.PNG");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.mizuki{
+    background-image: url("img/profile/mizuki.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.mizuki2{
+    background-image: url("img/profile/mizuki2.PNG");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.sizuka{
+    background-image: url("img/profile/sizuka.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.sizuka2{
+    background-image: url("img/profile/sizuka2.PNG");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.tomoka{
+    background-image: url("img/profile/tomoka.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.tomoka2{
+    background-image: url("img/profile/tomoka2.PNG");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.siho{
+    background-image: url("img/profile/siho.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.siho2{
+    background-image: url("img/profile/siho2.PNG");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.akane{
+    background-image: url("img/profile/akane.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.akane2{
+    background-image: url("img/profile/akane2.PNG");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.tsubasa{
+    background-image: url("img/profile/tsubasa.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.tsubasa2{
+    background-image: url("img/profile/tsubasa2.PNG");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.umi{
+    background-image: url("img/profile/umi.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.umi2{
+    background-image: url("img/profile/umi2.PNG");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.arisa{
+    background-image: url("img/profile/arisa.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.arisa2{
+    background-image: url("img/profile/arisa2.PNG");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.ayumu{
+    background-image: url("img/profile/ayumu.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.ayumu2{
+    background-image: url("img/profile/ayumu2.PNG");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.noriko{
+    background-image: url("img/profile/noriko.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.noriko2{
+    background-image: url("img/profile/noriko2.PNG");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.karen{
+    background-image: url("img/profile/karen.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.karen2{
+    background-image: url("img/profile/karen2.PNG");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.huka{
+    background-image: url("img/profile/huka.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.huka2{
+    background-image: url("img/profile/huka2.PNG");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.chizuru{
+    background-image: url("img/profile/chizuru.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.chizuru2{
+    background-image: url("img/profile/chizuru2.PNG");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.kaori{
+    background-image: url("img/profile/kaori.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.kaori2{
+    background-image: url("img/profile/kaori2.PNG");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.matsuri{
+    background-image: url("img/profile/matsuri.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.matsuri2{
+    background-image: url("img/profile/matsuri2.PNG");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.tsumugi{
+    background-image: url("img/profile/tsumugi.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.tsumugi2{
+    background-image: url("img/profile/tsumugi2.PNG");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.ellena{
+    background-image: url("img/profile/ellena.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.ellena2{
+    background-image: url("img/profile/ellena2.PNG");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.megumi{
+    background-image: url("img/profile/megumi.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.megumi2{
+    background-image: url("img/profile/megumi2.PNG");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.kotoha{
+    background-image: url("img/profile/kotoha.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.kotoha2{
+    background-image: url("img/profile/kotoha2.PNG");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.minako{
+    background-image: url("img/profile/minako.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.minako2{
+    background-image: url("img/profile/minako2.PNG");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.nao{
+    background-image: url("img/profile/nao.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.nao2{
+    background-image: url("img/profile/nao2.PNG");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.julia{
+    background-image: url("img/profile/julia.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.julia2{
+    background-image: url("img/profile/julia2.PNG");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.reika{
+    background-image: url("img/profile/reika.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.reika2{
+    background-image: url("img/profile/reika2.PNG");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.rio{
+    background-image: url("img/profile/rio.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.rio2{
+    background-image: url("img/profile/rio2.PNG");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
