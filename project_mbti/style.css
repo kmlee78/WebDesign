@@ -1,0 +1,422 @@
+*{
+    box-sizing: border-box;
+}
+
+@font-face{
+    src: url("font/Single_Day/SingleDay-Regular.ttf");
+    font-family: "love";
+}
+
+body{
+    padding-bottom: 10%; 
+    background-image: url("img/alphambti.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #e0e0e0;
+}
+
+.form{
+    height: 220px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#question{
+    font-size: 50px;
+    font-family: love;
+    font-weight: bold;
+}
+
+.type{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.input{
+    height: 30px;
+}
+
+.startBtn{
+    color: white;
+    background-color: green;
+    border-radius: 5px;
+    height: 27px;
+}
+
+.img{
+    padding-top: 10%;
+    width: 100%;
+    text-align: center;
+}
+.img img{
+    display: inline;
+}
+
+.img img:hover{
+    animation: bounce_frames 0.4s;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
+    animation-iteration-count: infinite;
+}
+@keyframes bounce_frames {
+    from {transform: translate3d(0, 0, 0);}
+    to {transform: translate3d(0, 30px, 0);}
+}
+
+footer{
+    text-align: center;
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    right: 10%;
+}
+
+/*procedure.html*/
+.questionnumber{
+    height: 50px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.number{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 100%;
+    border: 2px solid black;
+}
+
+.highlight{
+    border: 7px solid black;
+}
+
+.box{
+    width: 70%;
+    height: 450px;
+    text-align: center;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+.questions{
+    font-size: 30px;
+    font-family: "love";
+    margin: 0;
+    font-weight: bold;
+}
+
+.subbox{
+    width: 25%;
+    height: 70%;
+    display: inline-block;
+    
+}
+
+.img1, .img2, .img3{
+    height: 90%;
+    border: 2px solid black;
+}
+
+.mark{
+    margin-top: 20px;
+    text-align: right;
+}
+
+.next{
+    position: relative;
+    right: 200px;
+}
+.submit{
+    position: relative;
+    right: 150px;
+}
+
+.sentence1, .sentence2, .sentence3{
+    font-family: "love";
+    font-size: 20px;
+}
+
+.one{
+    background-image: url("img/chart1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.two{
+    background-image: url("img/chart2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.three{
+    background-image: url("img/chart3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.four{
+    background-image: url("img/house1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.five{
+    background-image: url("img/house2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.six{
+    background-image: url("img/house3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.seven{
+    background-image: url("img/desert1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.eight{
+    background-image: url("img/desert2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.nine{
+    background-image: url("img/desert3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+/*result*/
+.form2{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    text-align: center;
+}
+
+.mine{
+    width: 50%;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.picture, .profile{
+    width: 40%;
+    height: 100%;
+    float: left;
+    margin-left: 30px;
+    border-radius: 7px;
+}
+
+.tomain{
+    display: block;
+    color: white;
+    background-color: brown;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    border-radius: 5px;
+}
+
+.intj{
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.intj2{
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.intp{
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.intp2{
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.entj{
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.entj2{
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.entp{
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.entp2{
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.infj{
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.infj2{
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.infp{
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.infp2{
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.enfj{
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.enfj2{
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.enfp{
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.enfp2{
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.istj{
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.istj2{
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.isfj{
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.isfj2{
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.estj{
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.estj2{
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.esfj{
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.esfj2{
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.istp{
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.istp2{
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.isfp{
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.isfp2{
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.estp{
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.estp2{
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.esfp{
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.esfp2{
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
